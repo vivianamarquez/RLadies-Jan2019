@@ -20,6 +20,7 @@ install.packages(c('repr', 'IRdisplay', 'evaluate', 'crayon', 'pbdZMQ', 'devtool
 devtools::install_github('IRkernel/IRkernel')
 
 # Ignore 
+conda env remove -n rladies2
 conda create -n rladies3 python=3.6
 jupyter kernelspec list
 jupyter kernelspec uninstall ir
