@@ -1,11 +1,8 @@
-# Ignore 
-
-conda create -n rladies3 python=3.6
-jupyter kernelspec list
-jupyter kernelspec uninstall ir
-
-
 # Open terminal
+
+jupyter kernelspec list
+jupyter notebook
+ctrl+c
 
 R
 install.packages('IRkernel')
@@ -13,10 +10,16 @@ install.packages('IRkernel')
 IRkernel::installspec()
 quit()
 
+jupyter kernelspec list
 jupyter notebook
+ctrl+c
 
 
 # In addition, you might need to install in R the following packages:
 install.packages(c('repr', 'IRdisplay', 'evaluate', 'crayon', 'pbdZMQ', 'devtools', 'uuid', 'digest'))
 devtools::install_github('IRkernel/IRkernel')
 
+# Ignore 
+conda create -n rladies3 python=3.6
+jupyter kernelspec list
+jupyter kernelspec uninstall ir
